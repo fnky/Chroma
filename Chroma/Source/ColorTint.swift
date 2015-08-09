@@ -33,7 +33,7 @@ public struct ColorTint {
   public var maxColorSpan: CGFloat = 5
 
   /// The amount of colors to generate
-  public var amount: Int!
+  public var amount: Int
 
   private var spanH: CGFloat
   private var spanS: CGFloat
@@ -47,10 +47,10 @@ public struct ColorTint {
 
    :returns: A new `ColorTint` generator
    */
-  public init(startColor: UIColor!, endColor: UIColor?) {
+  public init(startColor: UIColor!, endColor: UIColor?, amount: Int) {
     self.startColor = startColor
     self.endColor = endColor
-
+    self.amount = amount
     spanH = maxColorSpan * hueStep;
     spanS = maxColorSpan * saturationStep;
     spanL = maxColorSpan * lightnessStep;
@@ -63,8 +63,8 @@ public struct ColorTint {
 
    :returns: A new `ColorTint` generator
    */
-  public init(baseColor: UIColor!) {
-    self.init(startColor: baseColor, endColor: nil)
+  public init(baseColor: UIColor, amount: Int) {
+    self.init(startColor: baseColor, endColor: nil, amount: amount)
   }
 
   /**
@@ -112,4 +112,32 @@ public struct ColorTint {
     )
   }
 
+}
+
+// MARK: - Hashable
+extension ColorTint: Hashable {
+
+  public var hashValue: Int {
+    return  startColor.hashValue
+      ^ (endColor?.hashValue ?? 0)
+      ^ hueStep.hashValue
+      ^ saturationStep.hashValue
+      ^ lightnessStep.hashValue
+      ^ maxColorSpan.hashValue
+      ^ amount.hashValue
+      ^ spanH.hashValue
+      ^ spanL.hashValue
+      ^ spanS.hashValue
+  }
+
+}
+
+/**
+Checks if two ColorTint instances are equal
+:param: lhs left hand color tint instance
+:param: rhs right hand color tin instance
+:returns: true if the two tints are equal
+*/
+public func ==(lhs: ColorTint, rhs: ColorTint) -> Bool {
+  return lhs.hashValue == rhs.hashValue
 }
