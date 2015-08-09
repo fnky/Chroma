@@ -9,20 +9,6 @@
 import Foundation
 import UIKit
 
-public struct D {
-
-  var prop: Int?
-
-  mutating func setProp(prop: Int?) -> D {
-    self.prop = prop
-    return self
-  }
-
-}
-//
-//var d = D()
-//d.setProp(123).setProp(5)
-
 /**
  *  Represents a `ColorTint` generator
  */
