@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A850EB131B77C6AE00168F1C /* Chroma.h in Headers */ = {isa = PBXBuildFile; fileRef = A850EB121B77C6AE00168F1C /* Chroma.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A850EB191B77C6AE00168F1C /* Chroma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A850EB0D1B77C6AE00168F1C /* Chroma.framework */; };
+		A850EB201B77C6AE00168F1C /* ChromaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EB1F1B77C6AE00168F1C /* ChromaTests.swift */; };
+		A850EB2B1B77C71A00168F1C /* ColorTint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EB2A1B77C71A00168F1C /* ColorTint.swift */; };
+		A850EB351B77CBFF00168F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EB341B77CBFF00168F1C /* AppDelegate.swift */; };
+		A850EB371B77CBFF00168F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EB361B77CBFF00168F1C /* ViewController.swift */; };
+		A850EB3A1B77CBFF00168F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A850EB381B77CBFF00168F1C /* Main.storyboard */; };
+		A850EB3C1B77CBFF00168F1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A850EB3B1B77CBFF00168F1C /* Images.xcassets */; };
+		A850EB3F1B77CBFF00168F1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A850EB3D1B77CBFF00168F1C /* LaunchScreen.xib */; };
+		A850EB4B1B77CC0000168F1C /* ChromaDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EB4A1B77CC0000168F1C /* ChromaDemoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A850EB1A1B77C6AE00168F1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A850EB041B77C6AE00168F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A850EB0C1B77C6AE00168F1C;
+			remoteInfo = Chroma;
+		};
+		A850EB451B77CC0000168F1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A850EB041B77C6AE00168F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A850EB2F1B77CBFF00168F1C;
+			remoteInfo = ChromaDemo;
+		};
+		A850EB531B77CD7B00168F1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A850EB041B77C6AE00168F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A850EB0C1B77C6AE00168F1C;
+			remoteInfo = Chroma;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A850EB0D1B77C6AE00168F1C /* Chroma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Chroma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A850EB111B77C6AE00168F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A850EB121B77C6AE00168F1C /* Chroma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chroma.h; sourceTree = "<group>"; };
+		A850EB181B77C6AE00168F1C /* ChromaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChromaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A850EB1E1B77C6AE00168F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A850EB1F1B77C6AE00168F1C /* ChromaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaTests.swift; sourceTree = "<group>"; };
+		A850EB2A1B77C71A00168F1C /* ColorTint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorTint.swift; path = Source/ColorTint.swift; sourceTree = "<group>"; };
+		A850EB301B77CBFF00168F1C /* ChromaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChromaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A850EB331B77CBFF00168F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A850EB341B77CBFF00168F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A850EB361B77CBFF00168F1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A850EB391B77CBFF00168F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A850EB3B1B77CBFF00168F1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A850EB3E1B77CBFF00168F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A850EB441B77CBFF00168F1C /* ChromaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChromaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A850EB491B77CC0000168F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A850EB4A1B77CC0000168F1C /* ChromaDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaDemoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A850EB091B77C6AE00168F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A850EB151B77C6AE00168F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A850EB191B77C6AE00168F1C /* Chroma.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A850EB2D1B77CBFF00168F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A850EB411B77CBFF00168F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A850EB031B77C6AE00168F1C = {
+			isa = PBXGroup;
+			children = (
+				A850EB0F1B77C6AE00168F1C /* Chroma */,
+				A850EB1C1B77C6AE00168F1C /* ChromaTests */,
+				A850EB311B77CBFF00168F1C /* ChromaDemo */,
+				A850EB471B77CC0000168F1C /* ChromaDemoTests */,
+				A850EB0E1B77C6AE00168F1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A850EB0E1B77C6AE00168F1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A850EB0D1B77C6AE00168F1C /* Chroma.framework */,
+				A850EB181B77C6AE00168F1C /* ChromaTests.xctest */,
+				A850EB301B77CBFF00168F1C /* ChromaDemo.app */,
+				A850EB441B77CBFF00168F1C /* ChromaDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A850EB0F1B77C6AE00168F1C /* Chroma */ = {
+			isa = PBXGroup;
+			children = (
+				A850EB121B77C6AE00168F1C /* Chroma.h */,
+				A850EB101B77C6AE00168F1C /* Supporting Files */,
+				A850EB2A1B77C71A00168F1C /* ColorTint.swift */,
+			);
+			path = Chroma;
+			sourceTree = "<group>";
+		};
+		A850EB101B77C6AE00168F1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A850EB111B77C6AE00168F1C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A850EB1C1B77C6AE00168F1C /* ChromaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A850EB1F1B77C6AE00168F1C /* ChromaTests.swift */,
+				A850EB1D1B77C6AE00168F1C /* Supporting Files */,
+			);
+			path = ChromaTests;
+			sourceTree = "<group>";
+		};
+		A850EB1D1B77C6AE00168F1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A850EB1E1B77C6AE00168F1C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A850EB311B77CBFF00168F1C /* ChromaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A850EB341B77CBFF00168F1C /* AppDelegate.swift */,
+				A850EB361B77CBFF00168F1C /* ViewController.swift */,
+				A850EB381B77CBFF00168F1C /* Main.storyboard */,
+				A850EB3B1B77CBFF00168F1C /* Images.xcassets */,
+				A850EB3D1B77CBFF00168F1C /* LaunchScreen.xib */,
+				A850EB321B77CBFF00168F1C /* Supporting Files */,
+			);
+			path = ChromaDemo;
+			sourceTree = "<group>";
+		};
+		A850EB321B77CBFF00168F1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A850EB331B77CBFF00168F1C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A850EB471B77CC0000168F1C /* ChromaDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A850EB4A1B77CC0000168F1C /* ChromaDemoTests.swift */,
+				A850EB481B77CC0000168F1C /* Supporting Files */,
+			);
+			path = ChromaDemoTests;
+			sourceTree = "<group>";
+		};
+		A850EB481B77CC0000168F1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A850EB491B77CC0000168F1C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A850EB0A1B77C6AE00168F1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A850EB131B77C6AE00168F1C /* Chroma.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A850EB0C1B77C6AE00168F1C /* Chroma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A850EB231B77C6AE00168F1C /* Build configuration list for PBXNativeTarget "Chroma" */;
+			buildPhases = (
+				A850EB081B77C6AE00168F1C /* Sources */,
+				A850EB091B77C6AE00168F1C /* Frameworks */,
+				A850EB0A1B77C6AE00168F1C /* Headers */,
+				A850EB0B1B77C6AE00168F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chroma;
+			productName = Chroma;
+			productReference = A850EB0D1B77C6AE00168F1C /* Chroma.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A850EB171B77C6AE00168F1C /* ChromaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A850EB261B77C6AE00168F1C /* Build configuration list for PBXNativeTarget "ChromaTests" */;
+			buildPhases = (
+				A850EB141B77C6AE00168F1C /* Sources */,
+				A850EB151B77C6AE00168F1C /* Frameworks */,
+				A850EB161B77C6AE00168F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A850EB1B1B77C6AE00168F1C /* PBXTargetDependency */,
+			);
+			name = ChromaTests;
+			productName = ChromaTests;
+			productReference = A850EB181B77C6AE00168F1C /* ChromaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A850EB2F1B77CBFF00168F1C /* ChromaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A850EB4C1B77CC0000168F1C /* Build configuration list for PBXNativeTarget "ChromaDemo" */;
+			buildPhases = (
+				A850EB2C1B77CBFF00168F1C /* Sources */,
+				A850EB2D1B77CBFF00168F1C /* Frameworks */,
+				A850EB2E1B77CBFF00168F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A850EB541B77CD7B00168F1C /* PBXTargetDependency */,
+			);
+			name = ChromaDemo;
+			productName = ChromaDemo;
+			productReference = A850EB301B77CBFF00168F1C /* ChromaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A850EB431B77CBFF00168F1C /* ChromaDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A850EB4F1B77CC0000168F1C /* Build configuration list for PBXNativeTarget "ChromaDemoTests" */;
+			buildPhases = (
+				A850EB401B77CBFF00168F1C /* Sources */,
+				A850EB411B77CBFF00168F1C /* Frameworks */,
+				A850EB421B77CBFF00168F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A850EB461B77CC0000168F1C /* PBXTargetDependency */,
+			);
+			name = ChromaDemoTests;
+			productName = ChromaDemoTests;
+			productReference = A850EB441B77CBFF00168F1C /* ChromaDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A850EB041B77C6AE00168F1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Reversebox;
+				TargetAttributes = {
+					A850EB0C1B77C6AE00168F1C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A850EB171B77C6AE00168F1C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A850EB2F1B77CBFF00168F1C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A850EB431B77CBFF00168F1C = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = A850EB2F1B77CBFF00168F1C;
+					};
+				};
+			};
+			buildConfigurationList = A850EB071B77C6AE00168F1C /* Build configuration list for PBXProject "Chroma" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A850EB031B77C6AE00168F1C;
+			productRefGroup = A850EB0E1B77C6AE00168F1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A850EB0C1B77C6AE00168F1C /* Chroma */,
+				A850EB171B77C6AE00168F1C /* ChromaTests */,
+				A850EB2F1B77CBFF00168F1C /* ChromaDemo */,
+				A850EB431B77CBFF00168F1C /* ChromaDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A850EB0B1B77C6AE00168F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A850EB161B77C6AE00168F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A850EB2E1B77CBFF00168F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A850EB3A1B77CBFF00168F1C /* Main.storyboard in Resources */,
+				A850EB3F1B77CBFF00168F1C /* LaunchScreen.xib in Resources */,
+				A850EB3C1B77CBFF00168F1C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A850EB421B77CBFF00168F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A850EB081B77C6AE00168F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A850EB2B1B77C71A00168F1C /* ColorTint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A850EB141B77C6AE00168F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A850EB201B77C6AE00168F1C /* ChromaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A850EB2C1B77CBFF00168F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A850EB371B77CBFF00168F1C /* ViewController.swift in Sources */,
+				A850EB351B77CBFF00168F1C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A850EB401B77CBFF00168F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A850EB4B1B77CC0000168F1C /* ChromaDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A850EB1B1B77C6AE00168F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A850EB0C1B77C6AE00168F1C /* Chroma */;
+			targetProxy = A850EB1A1B77C6AE00168F1C /* PBXContainerItemProxy */;
+		};
+		A850EB461B77CC0000168F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A850EB2F1B77CBFF00168F1C /* ChromaDemo */;
+			targetProxy = A850EB451B77CC0000168F1C /* PBXContainerItemProxy */;
+		};
+		A850EB541B77CD7B00168F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A850EB0C1B77C6AE00168F1C /* Chroma */;
+			targetProxy = A850EB531B77CD7B00168F1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A850EB381B77CBFF00168F1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A850EB391B77CBFF00168F1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A850EB3D1B77CBFF00168F1C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A850EB3E1B77CBFF00168F1C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A850EB211B77C6AE00168F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A850EB221B77C6AE00168F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A850EB241B77C6AE00168F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Chroma/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A850EB251B77C6AE00168F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Chroma/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A850EB271B77C6AE00168F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChromaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A850EB281B77C6AE00168F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChromaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A850EB4D1B77CC0000168F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChromaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A850EB4E1B77CC0000168F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChromaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A850EB501B77CC0000168F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChromaDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChromaDemo.app/ChromaDemo";
+			};
+			name = Debug;
+		};
+		A850EB511B77CC0000168F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChromaDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChromaDemo.app/ChromaDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A850EB071B77C6AE00168F1C /* Build configuration list for PBXProject "Chroma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A850EB211B77C6AE00168F1C /* Debug */,
+				A850EB221B77C6AE00168F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A850EB231B77C6AE00168F1C /* Build configuration list for PBXNativeTarget "Chroma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A850EB241B77C6AE00168F1C /* Debug */,
+				A850EB251B77C6AE00168F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A850EB261B77C6AE00168F1C /* Build configuration list for PBXNativeTarget "ChromaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A850EB271B77C6AE00168F1C /* Debug */,
+				A850EB281B77C6AE00168F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A850EB4C1B77CC0000168F1C /* Build configuration list for PBXNativeTarget "ChromaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A850EB4D1B77CC0000168F1C /* Debug */,
+				A850EB4E1B77CC0000168F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A850EB4F1B77CC0000168F1C /* Build configuration list for PBXNativeTarget "ChromaDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A850EB501B77CC0000168F1C /* Debug */,
+				A850EB511B77CC0000168F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A850EB041B77C6AE00168F1C /* Project object */;
+}
