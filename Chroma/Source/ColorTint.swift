@@ -128,23 +128,30 @@ public struct ColorTint {
 
 }
 
+// MARK: - Hashable
 extension ColorTint: Hashable {
 
   public var hashValue: Int {
-    return  startColor.hashValue ^
-           (endColor?.hashValue ?? 0) ^
-            hueStep.hashValue ^
-            saturationStep.hashValue ^
-            lightnessStep.hashValue ^
-            maxColorSpan.hashValue ^
-            amount.hashValue ^
-            spanH.hashValue ^
-            spanL.hashValue ^
-            spanS.hashValue
+    return  startColor.hashValue
+      ^ (endColor?.hashValue ?? 0)
+      ^ hueStep.hashValue
+      ^ saturationStep.hashValue
+      ^ lightnessStep.hashValue
+      ^ maxColorSpan.hashValue
+      ^ amount.hashValue
+      ^ spanH.hashValue
+      ^ spanL.hashValue
+      ^ spanS.hashValue
   }
 
 }
 
+/**
+Checks if two ColorTint instances are equal
+:param: lhs left hand color tint instance
+:param: rhs right hand color tin instance
+:returns: true if the two tints are equal
+*/
 public func ==(lhs: ColorTint, rhs: ColorTint) -> Bool {
   return lhs.hashValue == rhs.hashValue
 }
