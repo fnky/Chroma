@@ -20,7 +20,7 @@ class ViewController: UITableViewController {
   required init!(coder aDecoder: NSCoder!) {
     baseColor = UIColor(hue: 260.0/360.0, saturation: 82.0/100.0, brightness: 58.0/100.0, alpha: 1.0)
     endColor = UIColor(hue: 56.0/360.0, saturation: 89.0/100.0, brightness: 97.0/100.0, alpha: 1.0)
-    tintsGenerator = ColorTint(baseColor: baseColor)
+    tintsGenerator = ColorTint(baseColor: baseColor, amount: rows)
 
     super.init(coder: aDecoder)
   }
@@ -56,7 +56,7 @@ class ViewController: UITableViewController {
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
     cell.backgroundColor = tintsGenerator.tintAtIndex(indexPath.row)
-    // println(cell.backgroundColor)
+    cell.selectedBackgroundView = UIView()
     return cell
   }
 

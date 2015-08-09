@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D3E35561B780907003E688B /* Chroma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A850EB0D1B77C6AE00168F1C /* Chroma.framework */; };
+		2DF04E821B780B8B00EBE23D /* Chroma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A850EB0D1B77C6AE00168F1C /* Chroma.framework */; };
 		A850EB131B77C6AE00168F1C /* Chroma.h in Headers */ = {isa = PBXBuildFile; fileRef = A850EB121B77C6AE00168F1C /* Chroma.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A850EB191B77C6AE00168F1C /* Chroma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A850EB0D1B77C6AE00168F1C /* Chroma.framework */; };
 		A850EB201B77C6AE00168F1C /* ChromaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EB1F1B77C6AE00168F1C /* ChromaTests.swift */; };
 		A850EB2B1B77C71A00168F1C /* ColorTint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EB2A1B77C71A00168F1C /* ColorTint.swift */; };
 		A850EB351B77CBFF00168F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EB341B77CBFF00168F1C /* AppDelegate.swift */; };
@@ -20,7 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A850EB1A1B77C6AE00168F1C /* PBXContainerItemProxy */ = {
+		2D3E35541B7808FE003E688B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A850EB041B77C6AE00168F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A850EB0C1B77C6AE00168F1C;
+			remoteInfo = Chroma;
+		};
+		2DF04E801B780B8600EBE23D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A850EB041B77C6AE00168F1C /* Project object */;
 			proxyType = 1;
@@ -33,13 +41,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = A850EB2F1B77CBFF00168F1C;
 			remoteInfo = ChromaDemo;
-		};
-		A850EB531B77CD7B00168F1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A850EB041B77C6AE00168F1C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A850EB0C1B77C6AE00168F1C;
-			remoteInfo = Chroma;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A850EB191B77C6AE00168F1C /* Chroma.framework in Frameworks */,
+				2DF04E821B780B8B00EBE23D /* Chroma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3E35561B780907003E688B /* Chroma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +236,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A850EB1B1B77C6AE00168F1C /* PBXTargetDependency */,
+				2DF04E811B780B8600EBE23D /* PBXTargetDependency */,
 			);
 			name = ChromaTests;
 			productName = ChromaTests;
@@ -252,7 +254,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A850EB541B77CD7B00168F1C /* PBXTargetDependency */,
+				2D3E35551B7808FE003E688B /* PBXTargetDependency */,
 			);
 			name = ChromaDemo;
 			productName = ChromaDemo;
@@ -393,20 +395,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A850EB1B1B77C6AE00168F1C /* PBXTargetDependency */ = {
+		2D3E35551B7808FE003E688B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A850EB0C1B77C6AE00168F1C /* Chroma */;
-			targetProxy = A850EB1A1B77C6AE00168F1C /* PBXContainerItemProxy */;
+			targetProxy = 2D3E35541B7808FE003E688B /* PBXContainerItemProxy */;
+		};
+		2DF04E811B780B8600EBE23D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A850EB0C1B77C6AE00168F1C /* Chroma */;
+			targetProxy = 2DF04E801B780B8600EBE23D /* PBXContainerItemProxy */;
 		};
 		A850EB461B77CC0000168F1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A850EB2F1B77CBFF00168F1C /* ChromaDemo */;
 			targetProxy = A850EB451B77CC0000168F1C /* PBXContainerItemProxy */;
-		};
-		A850EB541B77CD7B00168F1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A850EB0C1B77C6AE00168F1C /* Chroma */;
-			targetProxy = A850EB531B77CD7B00168F1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -529,6 +531,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Chroma/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -546,6 +549,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Chroma/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -564,6 +568,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ChromaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -577,6 +582,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ChromaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -591,7 +597,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ChromaDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -602,7 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChromaDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -621,7 +627,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ChromaDemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChromaDemo.app/ChromaDemo";
@@ -637,7 +643,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ChromaDemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChromaDemo.app/ChromaDemo";
