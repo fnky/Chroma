@@ -21,13 +21,20 @@ git clone https://github.com/fnky/Chroma.git
 
 #### ColorTint
 
-```swift
-var tintGenerator: ColorTint = ColorTint(baseColor: UIColor(red: 0.94, green: 0.25, blue: 0.54, alpha: 1.0))
+You can either generate tints for a base color or generate tints between
+two colors
 
-ColorTint.tintForIndex(4) // => UIColor
+```swift
+
+// Generate tints from a base color
+let baseColor = UIColor(red: 0.94, green: 0.25, blue: 0.54, alpha: 1.0)
+let tintGenerator: ColorTint = ColorTint(baseColor: baseColor, amount: 20)
+
+let fourthTint = tintGenerator.tintForIndex(4) // => UIColor
+
 ```
 
-> See ChromaDemo for more examples 
+> See ChromaDemo for more examples
 
 ## License
 
