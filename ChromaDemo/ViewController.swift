@@ -17,7 +17,7 @@ class ViewController: UITableViewController {
   var tintsGenerator: ColorTint
   let rows: Int = 14
 
-  required init!(coder aDecoder: NSCoder!) {
+  required init?(coder aDecoder: NSCoder) {
     baseColor = UIColor(hue: 260.0/360.0, saturation: 82.0/100.0, brightness: 58.0/100.0, alpha: 1.0)
     endColor = UIColor(hue: 56.0/360.0, saturation: 89.0/100.0, brightness: 97.0/100.0, alpha: 1.0)
     tintsGenerator = ColorTint(baseColor: baseColor, amount: rows)
@@ -43,9 +43,9 @@ class ViewController: UITableViewController {
     }
 
     tintsGenerator.amount = rows
-    tintsGenerator.hueStep = CGFloat(matte(Double(sh), Double(eh), Double(rows), 4));
-    tintsGenerator.saturationStep = CGFloat(matte(Double(ss), Double(es), Double(rows), 10));
-    tintsGenerator.lightnessStep = CGFloat(matte(Double(sl), Double(el), Double(rows), 10));
+    tintsGenerator.hueStep = CGFloat(matte(Double(sh), to: Double(eh), between: Double(rows), factor: 4));
+    tintsGenerator.saturationStep = CGFloat(matte(Double(ss), to: Double(es), between: Double(rows), factor: 10));
+    tintsGenerator.lightnessStep = CGFloat(matte(Double(sl), to: Double(el), between: Double(rows), factor: 10));
     tintsGenerator.maxColorSpan = CGFloat(rows);
   }
 
@@ -54,7 +54,7 @@ class ViewController: UITableViewController {
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
     cell.backgroundColor = tintsGenerator.tintAtIndex(indexPath.row)
     cell.selectedBackgroundView = UIView()
     return cell
